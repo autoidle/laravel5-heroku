@@ -1,0 +1,46 @@
+{
+  "name": "laravel-heroku",
+  "description": "Latest Laravel with best practices for deployment on Heroku",
+  "keywords": [
+    "laravel"
+  ],
+  "website": "https://autoidle.com",
+  "repository": "https://github.com/autoidle/laravel-heroku",
+  "logo": "https://raw.githubusercontent.com/laravel/art/master/laravel-l-slant.png",
+  "env": {
+    "APP_DEBUG": {
+      "value": "true",
+      "required": true
+    },
+    "APP_KEY": {
+      "description": "Run php artisan key:generate --show or get a key on https://autoidle.com/laravel-key-generate",
+      "required": true
+    },
+    "LOG_CHANNEL": {
+      "value": "errorlog",
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "hobby"
+    },
+    "scheduler": {
+      "quantity": 1,
+      "size": "hobby"
+    }
+  },
+  "addons": [
+    "heroku-postgresql:hobby-dev",
+    "heroku-redis:hobby-dev"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    },
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
