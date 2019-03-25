@@ -1,5 +1,33 @@
 <?php
 
+$dbHost = env('DB_HOST', '127.0.0.1');
+$dbPort = env('DB_PORT', '5432');
+$dbName = env('DB_DATABASE', 'forge');
+$dbUser = env('DB_USERNAME', 'forge');
+$dbPassword = env('DB_PASSWORD', '');
+
+if (env('DATABASE_URL')) {
+    $databaseUrl = parse_url(env('DATABASE_URL'));
+
+    $dbHost = $databaseUrl['host'];
+    $dbPort = $databaseUrl['port'];
+    $dbName = substr($databaseUrl['path'], 1);
+    $dbUser = $databaseUrl['user'];
+    $dbPassword = $databaseUrl['pass'];
+}
+
+$redisHost = env('REDIS_HOST', '127.0.0.1');
+$redisPort = env('REDIS_PORT', 6379);
+$redisPassword = env('REDIS_PASSWORD', null);
+
+if (env('REDIS_URL')) {
+    $redisUrl = parse_url(env('REDIS_URL'));
+
+    $redisHost = $redisUrl['host'];
+    $redisPort = $redisUrl['port'];
+    $redisPassword = $redisUrl['pass'];
+}
+
 return [
 
     /*
@@ -13,7 +41,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'pgsql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -61,11 +89,11 @@ return [
 
         'pgsql' => [
             'driver' => 'pgsql',
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '5432'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'host' => $dbHost,
+            'port' => $dbPort,
+            'database' => $dbName,
+            'username' => $dbUser,
+            'password' => $dbPassword,
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
@@ -120,16 +148,15 @@ return [
         ],
 
         'default' => [
-            'host' => env('REDIS_HOST', '127.0.0.1'),
-            'password' => env('REDIS_PASSWORD', null),
-            'port' => env('REDIS_PORT', 6379),
+            'host' => $redisHost,
+            'password' => $redisPassword,
+            'port' => $redisPort,
             'database' => env('REDIS_DB', 0),
         ],
-
         'cache' => [
-            'host' => env('REDIS_HOST', '127.0.0.1'),
-            'password' => env('REDIS_PASSWORD', null),
-            'port' => env('REDIS_PORT', 6379),
+            'host' => $redisHost,
+            'password' => $redisPassword,
+            'port' => $redisPort,
             'database' => env('REDIS_CACHE_DB', 1),
         ],
 
