@@ -1,10 +1,11 @@
 {
-    "name": "laravel/laravel",
+    "name": "autoidle/laravel-heroku",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Latest Laravel with best practices for deployment on Heroku.",
     "keywords": [
         "framework",
-        "laravel"
+        "laravel",
+        "heroku"
     ],
     "license": "MIT",
     "require": {
