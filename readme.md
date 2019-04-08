@@ -19,8 +19,6 @@ Laravel with best practices for deployment on Heroku.
 
 ### 1. Install Heroku CLI
 
-Install the HEROKU CLI
-
 https://devcenter.heroku.com/articles/heroku-cli
 
 ### 2. Create a new project 
@@ -42,7 +40,6 @@ git commit -m 'Fresh Laravel installation'
 
 ```
 heroku create my-laravel-heroku --region eu --addons=heroku-postgresql:hobby-dev,heroku-redis:hobby-dev
-
 ```
 
 ### 5. Set ENV variables
@@ -100,7 +97,7 @@ heroku open
 
 ![Laravel with Auth on Heroku (Registration)](https://raw.githubusercontent.com/autoidle/laravel-heroku/master/doc/register.png)
 
-![Laravel with Auth on Heroku (Logged in)](https://raw.githubusercontent.com/autoidle/laravel-heroku/master/doc/register.png)
+![Laravel with Auth on Heroku (Logged in)](https://raw.githubusercontent.com/autoidle/laravel-heroku/master/doc/home.png)
 
 ---
 
