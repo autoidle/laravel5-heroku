@@ -45,7 +45,7 @@ heroku create my-laravel-heroku --region eu --addons=heroku-postgresql:hobby-dev
 ### 5. Set ENV variables
 
 ```
-heroku config:set APP_DEBUG=true LOG_CHANNEL=errorlog APP_ENV=staging
+heroku config:set APP_DEBUG=true LOG_CHANNEL=errorlog
 heroku config:set APP_KEY=$(php artisan --no-ansi key:generate --show)
 ```
 
