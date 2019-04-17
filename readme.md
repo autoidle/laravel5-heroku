@@ -1,11 +1,15 @@
 # Laravel on Heroku
 
-Laravel with best practices for deployment on Heroku.
+Laravel with best practices for deployment on Heroku. [Our articles on Medium](https://medium.com/@AutoIdle)
+
+# Works out of the box
+
+## Features
 
 * `Heroku Postgres` (for Database)
 * `Heroku Redis` (for Cache, Queue and Session) 
 * Migrate Database automatically on deploy
-* Log works out of the box
+* Logging
 * With Scheduler
 
 ## Deploy to Heroku
