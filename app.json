@@ -24,11 +24,11 @@
   "formation": {
     "web": {
       "quantity": 1,
-      "size": "hobby"
+      "size": "free"
     },
     "scheduler": {
       "quantity": 1,
-      "size": "hobby"
+      "size": "free"
     }
   },
   "addons": [
