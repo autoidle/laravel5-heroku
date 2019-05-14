@@ -15,10 +15,6 @@
     "APP_KEY": {
       "description": "Run php artisan key:generate --show or get a key on https://autoidle.com/laravel-key-generate",
       "required": true
-    },
-    "LOG_CHANNEL": {
-      "value": "errorlog",
-      "required": true
     }
   },
   "formation": {
