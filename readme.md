@@ -28,7 +28,7 @@ https://devcenter.heroku.com/articles/heroku-cli
 ### 2. Create a new project 
 
 ```
-composer create-project autoidle/laravel-heroku:dev-master my-laravel-heroku
+composer create-project autoidle/laravel-heroku my-laravel-heroku
 ```
 
 ### 3. Tracking your app in Git
