@@ -33,10 +33,10 @@
   ],
   "buildpacks": [
     {
-      "url": "heroku/php"
+      "url": "heroku/nodejs"
     },
     {
-      "url": "heroku/nodejs"
+      "url": "heroku/php"
     }
   ]
 }
