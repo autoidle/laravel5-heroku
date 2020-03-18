@@ -14,9 +14,9 @@ Laravel with best practices for deployment on Heroku. [Our articles on Medium](h
 
 ## Deploy to Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/autoidle/laravel-heroku)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/autoidle/laravel5-heroku)
 
-![Create New App - Heroku](https://raw.githubusercontent.com/autoidle/laravel-heroku/master/doc/heroku.png)
+![Create New App - Heroku](https://raw.githubusercontent.com/autoidle/laravel5-heroku/master/doc/heroku.png)
 
 
 ## Setup locally and deploy to Heroku
@@ -28,7 +28,7 @@ https://devcenter.heroku.com/articles/heroku-cli
 ### 2. Create a new project 
 
 ```
-composer create-project autoidle/laravel-heroku my-laravel-heroku
+composer create-project autoidle/laravel5-heroku my-laravel-heroku
 ```
 
 ### 3. Tracking your app in Git
@@ -99,13 +99,13 @@ heroku open
 ```
 
 
-![Laravel with Auth on Heroku (Registration)](https://raw.githubusercontent.com/autoidle/laravel-heroku/master/doc/register.png)
+![Laravel with Auth on Heroku (Registration)](https://raw.githubusercontent.com/autoidle/laravel5-heroku/master/doc/register.png)
 
-![Laravel with Auth on Heroku (Logged in)](https://raw.githubusercontent.com/autoidle/laravel-heroku/master/doc/home.png)
+![Laravel with Auth on Heroku (Logged in)](https://raw.githubusercontent.com/autoidle/laravel5-heroku/master/doc/home.png)
 
 ---
 
-[Code difference between Laravel and Laravel on Heroku](https://github.com/autoidle/laravel-heroku/compare/84ce504...master)
+[Code difference between Laravel and Laravel on Heroku](https://github.com/autoidle/laravel5-heroku/compare/84ce504...master)
 
 ---
 

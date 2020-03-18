@@ -1,5 +1,5 @@
 {
-    "name": "autoidle/laravel-heroku",
+    "name": "autoidle/laravel5-heroku",
     "type": "project",
     "description": "Latest Laravel with best practices for deployment on Heroku.",
     "keywords": [

@@ -5,7 +5,7 @@
     "laravel"
   ],
   "website": "https://autoidle.com",
-  "repository": "https://github.com/autoidle/laravel-heroku",
+  "repository": "https://github.com/autoidle/laravel5-heroku",
   "logo": "https://raw.githubusercontent.com/laravel/art/master/laravel-logo.png",
   "env": {
     "APP_DEBUG": {
